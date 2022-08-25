@@ -1,0 +1,187 @@
+/*
+Challenge:
+    Follow my orders on where we should
+    leave our lab equipment!
+    
+    justify-content:
+    start, center, end, space-around, 
+    space-evenly, space-between
+    
+    align-items:
+    start, center, end 
+
+    .container {
+        border: 8px solid #016a26;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .item {
+        width: 50px;
+        height: 50px;
+        margin: 2px;
+        padding: 10px;
+        font-size: 50px;
+        border: 2px solid black;
+        background: linear-gradient(#14463d, #016a26);
+    }
+*/
+
+
+/*
+Challenge:
+Style the app according to the provided design.
+The font is called "Happy Monkey" and can be
+embedded via Google Fonts.
+
+Don't know how to make an image round? Google it!
+Also, consider how you should select the image 
+(class vs id vs element selector).
+
+Challenge:
+Add colors to the site based on the provided design.
+
+pink: #EFB0C9
+blue: #a2d2ff
+white: #ffffff
+
+Challenge:
+Add a thin blurred border around the <h1>, <h2>, 
+and <h4> using the text-shadow technique you 
+learned in the Space Exploration section. Set
+the blur to 1px and the color to black.
+
+Challenge:
+First, wrap the HTML elements in a <div> with an 
+id called "header".
+
+Then, select the "header" and use flexbox to achieve
+the layout you've been provided in the design slide.
+*/
+
+/*
+Challenge:
+Create the next GIFt (hot.gif). Its HTML structure 
+should be like the previous one, but without the 
+"gift-hint" element.
+
+However, now that you have multiple GIFts on the page,
+you cannot use the "gift-img" class to set the GIF 
+background-image(s) on :hover. Each GIFt will need a 
+unique id that controls which background image that 
+should be shown when hovering over the element.
+*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;;
+    color: #ffffff;
+    background-color:#a2d2ff ;
+}
+
+#baby-img{
+    border-radius: 50%;
+    width: 225px;
+    height: 225px;
+    border: 5px solid #EFB0C9;
+    margin-bottom: 2px;
+    margin-top: 5px;
+}
+h1, h2, h3, h4, p{
+    text-shadow: 0px 0px 2px black;
+}
+h1{
+    margin-bottom: 5px;
+}
+
+#bday-age{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color:#EFB0C9;
+    margin: 10px 0px 2px 0p;
+}
+#bday-date{
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color:#EFB0C9;
+    margin-top: 10px;
+}
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*
+Challenge:
+1. Create a "gift-section" <div> that will wrap
+   all the elements for the first gift.
+2. Add the <h2>, <h3>, and <img> elements, and
+   give all of them their own classes.
+3. Style the elements according to the design.
+
+PS: the image should be 400px wide. 
+*/
+.gift-img{
+    margin: 0 auto;
+    justify-content: center;
+    border: 5px solid #EFB0C9;
+    border-radius: 10px;
+    background-image: url("giftcover.jpg");
+    width: 400px;
+    height: 400px;  
+}
+#happy:hover{
+    background-image: url("birthdaycake.webp");
+    background-size: cover;
+}
+
+#love:hover{
+    background-image: url("fallinlove.webp");
+    background-size: cover;
+}
+
+#cute:hover{
+    background-image: url("cute.webp");
+    background-size: cover;
+}
+
+#pretty:hover{
+    background-image: url("pretty.webp");
+    background-size: cover;
+}
+
+.gift-section{
+    margin-top: 25px;
+}
+
+.gifttitle{
+    margin-bottom: 10px;
+}
+
+.giftsubtitle{
+    margin-top: 10px;
+}
+
+/*
+Challenge:
+"Fix" the "gift-img" <div> so that it looks 
+like the provided design again.
+
+It needs a height (should be a square), a
+background image, and to be centered again.
+
+Challenge:
+Create the "cute" and "pretty" GIFt sections.
+
+Texts:
+If I had to describe you with ONE word 👇
+
+The only person as pretty as you 💪
+
+*/

@@ -1,0 +1,72 @@
+<!-- Example
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="item">🥽</div>
+            <div class="item">🧪</div>
+            <div class="item">🧫</div>
+        </div>
+    </body>
+</html>
+-->
+<!--birthday gift card-->
+ <html>
+    <head>
+        <link rel="stylesheet" href="styles.css"
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron:wght@400;800&display=swap"
+              rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <h1>Today is My love's birthday 🎉</h1>
+            <img id="baby-img" src="Mylove.jpeg">
+            <h2 id="bday-age">28 years old</h2>
+            <h4 id="bday-date">01.06.1994</h4>
+        </div>
+        <!-- Challenge:
+1. Create a "gift-section" <div> that will wrap
+   all the elements for the first gift.
+2. Add the <h2>, <h3>, and <img> elements, and
+   give all of them their own classes.
+3. Style the elements according to the design.
+
+PS: the image should be 400px wide. -->
+
+<!--
+Challenge:
+Create the next GIFt (hot.gif). Its HTML structure 
+should be like the previous one, but without the 
+"gift-hint" element.
+
+However, now that you have multiple GIFts on the page,
+you cannot use the "gift-img" class to set the GIF 
+background-image(s) on :hover. Each GIFt will need a 
+unique id that controls which background image that 
+should be shown when hovering over the element.
+-->
+
+        <div class="gift-section">
+            <h2 class="gifttitle">Here's how Happy I'm for you today &#128150</h2>
+            <h3 class="giftsubtitle">(Hover Over the gift)</h3>
+            <div class="gift-img" id="happy"></div>
+        </div>
+        <div class="gift-section">
+            <h2 class="gifttitle">how people react when they see you &#128150</h2>
+            <div class="gift-img" id="love"></div>
+        </div>
+        <div class="gift-section">
+            <h2 class="gifttitle">If I had to describe you with ONE word 👇</h2>
+            <div class="gift-img" id="cute"></div>
+        </div>
+        <div class="gift-section">
+            <h2 class="gifttitle">The only person as pretty as you 👇</h2>
+            <div class="gift-img" id="pretty"></div>
+        </div>
+    </body>
+</html>
